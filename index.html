@@ -5,80 +5,71 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wallace S. Msagusa - About</title>
+
+	<!-- Tailwind output stylesheet -->
 	<link rel="stylesheet" href="./dist/output.css">
+
+	<!-- LineIcons stylesheet CDN -->
+	<link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a class="current" href="index.html">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Research & Publications</a></li>            
-            <li><a href="#">Personal</a></li>
-        </ul>
-    </nav>
+	<nav class="py-8">
+		<ul>
+			<li><a class="current" href="index.html">About</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Research & Publications</a></li>
+			<li><a href="#">Personal</a></li>
+		</ul>
+	</nav>
 
-	<header style="padding-bottom: 0.5em;">
-		<h1>
-			Wallace S. Msagusa
-		</h1>
+	<header class="bg-white flex justify-center py-6">
+		<div class="max-w-6xl w-full px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
 
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ducimus minima nam facilis incidunt? Magni
-        ratione sapiente maiores quidem animi id enim voluptates dolores harum? Odit quasi laborum iure aut.</p>
+			<!-- Left: Text Content -->
+			<div class="flex-2">
+				<h1 class="text-4xl font-bold text-gray-900 mt-1 mb-2">Hi, I'm Wallace</h1>
+				<p class="text-gray-500">Software Engineer & Researcher</p>
+				<p class="mt-4">I'm passionate about distributed systems, information security, usable privacy, machine learning, responsible AI and open source technologies
+					and I want to use technology to help make people's lives more fulfilling. You can find me on <a href="https://www.linkedin.com/in/wallace-stev/">LinkedIn</a> or shoot me an email.</p>
+				<p class="mt-4"><strong>Education:</strong>&nbsp; BSc. Computer Science, MSc. Information Technology</p>
+				<p><strong>Email:</strong>&nbsp; <a href="mailto:wmsagusa@andrew.cmu.edu">wmsagusa[at]andrew.cmu.edu</a></p>
+				<p><strong>Location:</strong>&nbsp; Kigali, Rwanda</p>
 
-		<p><strong>Email:</strong>&nbsp; wmsagusa@andrew.cmu.edu</p>
-		<p><strong>Education:</strong>&nbsp; BSc. Computer Science, MSc. Information Technology</p>
+				<div class="mt-6 flex gap-4">
+					<a href="#"
+						class="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
+						Request CV
+					</a>
+					<a href="#"
+						class="px-6 py-2 bg-gray-100 text-gray-800 rounded-full font-medium hover:shadow-md transition">
+						Contact
+					</a>
+				</div>
+			</div>
+
+			<!-- Right: Profile Image -->
+			<div class="flex-1 flex justify-center">
+				<div class="w-60 h-60 rounded-full overflow-hidden shadow-lg border-8 border-white">
+					<img src="img/4.jpg" alt="Alex Smith" class="w-full h-full object-cover">
+				</div>
+			</div>
+
+		</div>
+
 	</header>
+
 
 	<main>
 		<section>
-			<h2>Professional Summary</h2>
+			<h2>A Bit About Me</h2>
 			<p>
-				Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Java, Python, C++, and JavaScript. Strong engineering professional with a Master of Science (MSc) focused in Information Technology from Carnegie Mellon University.
+				Experienced Software Engineer with a demonstrated history of working in the information technology and
+				services industry. Skilled in Java, Python, C++, and JavaScript. Strong engineering professional with a
+				Master of Science (MSc) focused in Information Technology from Carnegie Mellon University.
 			</p>
-		</section>
-
-		<section>
-			<h2>Education</h2>
-			<article>
-				<h3>Master of Science (MSc) in Information Technology</h3>
-				<p>
-					<strong>Institution:</strong>&nbsp; Carnegie Mellon University<br>
-					<strong>Duration:</strong>&nbsp; 2023 - 2025
-				</p>
-			</article>
-
-			<article>
-				<h3>Bachelor of Science (BSc) in Computer Science</h3>
-				<p>
-					<strong>Institution:</strong>&nbsp; Ruaha Catholic University<br>
-					<strong>Duration:</strong>&nbsp; 2015 - 2018
-				</p>
-			</article>
-		</section>
-
-		<section>
-			<h2>Work Experience</h2>
-			<article>
-				<h3>Software Engineer</h3>
-				<p>
-					<strong>Company:</strong>&nbsp; Google<br>
-					<strong>Location:</strong>&nbsp; Mountain View, CA<br>
-					<strong>Duration:</strong>&nbsp; 2022 - Present<br>
-					<strong>Responsibilities:</strong>&nbsp; Developing software applications for the Android platform.
-				</p>
-			</article>
-
-			<article>
-				<h3>Software Engineer</h3>
-				<p>
-					<strong>Company:</strong>&nbsp; Facebook<br>
-					<strong>Location:</strong>&nbsp; Menlo Park, CA<br>
-					<strong>Duration:</strong>&nbsp; 2018 - 2021<br>
-					<strong>Responsibilities:</strong>&nbsp; Developing software applications for the iOS platform.
-				</p>
-			</article>
 		</section>
 
 		<section>
@@ -86,14 +77,16 @@
 			<article>
 				<h3>Project 1</h3>
 				<p>
-					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Google. It involved developing a mobile application that allows users to track their daily activities.
+					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Google. It
+					involved developing a mobile application that allows users to track their daily activities.
 				</p>
 			</article>
 
 			<article>
 				<h3>Project 2</h3>
 				<p>
-					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Facebook. It involved developing a mobile application that allows users to connect with their friends.
+					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Facebook.
+					It involved developing a mobile application that allows users to connect with their friends.
 				</p>
 			</article>
 		</section>
@@ -106,7 +99,7 @@
 				<li>MongoDB,</li>
 				<li>JavaScript</li>
 			</ul>
-		</section>		
+		</section>
 
 		<section>
 			<h2>Certifications</h2>
@@ -117,12 +110,12 @@
 				<li>Machine Learning Certification</li>
 			</ul>
 		</section>
-		
-		
+
+
 	</main>
 
-    <!-- Adding Javascript -->
-    <script type="module" src="global.js"></script>
+	<!-- Adding Javascript -->
+	<script type="module" src="global.js"></script>
 
 </body>
 

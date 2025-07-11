@@ -16,14 +16,14 @@
 @import "tailwindcss";
 
 :root {
-    --color-accent: oklch(65% 50% 0);
+    --color-accent: oklch(85% 20% 250);
 }
 
 body {
     /* font: 100%/1.65 'Mulish', sans-serif; */
-    font: 100%/1.65 'Space Mono', monospace;
-    max-width: 120ch;
-    margin-inline: max(1em, (100% - 120ch) / 2);
+    font: 90%/1.8 'Space Mono', monospace;
+    max-width: 140ch;
+    margin-inline: max(1em, (100% - 140ch) / 2);
     color: #2b2b2b;
     accent-color: var(--color-accent);
 }
@@ -39,29 +39,21 @@ ul {
 
 nav {
     display: flex;
-    margin-bottom: 1.5em;
-    border-bottom: 1px solid oklch(80% 3% 200);
     font-weight: 500;
 }
 
 nav a {
-    flex: 1;
     text-decoration: none;
     color: inherit;
     text-align: center;
-    padding: 1em;
-}
-
-nav a:hover {
-    background-color: oklch(from var(--color-accent) 95% 5% h);
-    border-bottom: var(--color-accent) 0.4em solid;
-    padding-bottom: 0.1em;
+    padding-right: calc(var(--spacing) * 5);
+    margin-right: calc(var(--spacing) * 5);
 }
 
 .current {
     font-weight: bold;
-    border-bottom: 0.4em solid oklch(60% 3% 200);
     padding-bottom: 0.1em;
+    color: var(--color-violet-700);
 }
 
 #profile {
@@ -77,12 +69,12 @@ h3 {
 }
 
 h1 {
-    font-size: 1.75em;
+    font-size: 2.5em;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 

@@ -36,4 +36,4 @@ npx @tailwindcss/cli --input ./src/style.css --output ./dist/output.css
 ```
 
 ## Samples
-- [Wallace S. Msagusa](#) (link coming!)
+- [Wallace S. Msagusa](https://wallace-stev.github.io/)

@@ -9,10 +9,8 @@
 	<!-- Tailwind output stylesheet -->
 	<link rel="stylesheet" href="./dist/output.css">
 
-	<!-- LineIcons stylesheet CDN -->
-	<link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
-
-</head>
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="./css/all.min.css" </head>
 
 <body>
 
@@ -25,22 +23,25 @@
 		</ul>
 	</nav>
 
-	<header class="bg-white flex justify-center py-6">
+	<header class="bg-white flex justify-center py-6 mb-2">
 		<div class="max-w-6xl w-full px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
 
 			<!-- Left: Text Content -->
 			<div class="flex-2">
 				<h1 class="text-4xl font-bold text-gray-900 mt-1 mb-2">Hi, I'm Wallace</h1>
 				<p class="text-gray-500">Software Engineer & Researcher</p>
-				<p class="mt-4">I'm passionate about distributed systems, information security, usable privacy, machine learning, responsible AI and open source technologies
-					and I want to use technology to help make people's lives more fulfilling. You can find me on <a href="https://www.linkedin.com/in/wallace-stev/">LinkedIn</a> or shoot me an email.</p>
+				<p class="mt-4">I'm passionate about distributed systems, information security, usable privacy, machine
+					learning, responsible AI and open source technologies
+					and I want to use technology to help make people's lives more fulfilling. You can find me on <a
+						href="https://www.linkedin.com/in/wallace-stev/">LinkedIn</a> or shoot me an email.</p>
 				<p class="mt-4"><strong>Education:</strong>&nbsp; BSc. Computer Science, MSc. Information Technology</p>
-				<p><strong>Email:</strong>&nbsp; <a href="mailto:wmsagusa@andrew.cmu.edu">wmsagusa[at]andrew.cmu.edu</a></p>
+				<p><strong>Email:</strong>&nbsp; <a href="mailto:wmsagusa@andrew.cmu.edu">wmsagusa[at]andrew.cmu.edu</a>
+				</p>
 				<p><strong>Location:</strong>&nbsp; Kigali, Rwanda</p>
 
 				<div class="mt-6 flex gap-4">
 					<a href="#"
-						class="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
+						class="px-6 py-2 border-2 border-violet-700 text-violet-700 rounded-full font-medium hover:bg-violet-700 link-button transition">
 						Request CV
 					</a>
 					<a href="#"
@@ -50,12 +51,21 @@
 				</div>
 			</div>
 
-			<!-- Right: Profile Image -->
-			<div class="flex-1 flex justify-center">
+			<!-- Right: Profile Image Circular -->
+			<!-- <div class="flex-1 flex justify-center">
 				<div class="w-60 h-60 rounded-full overflow-hidden shadow-lg border-8 border-white">
 					<img src="img/4.jpg" alt="Alex Smith" class="w-full h-full object-cover">
 				</div>
+			</div> -->
+
+			<!-- Right: Profile Image Square -->
+			<div class="relative w-64 h-80 bg-violet-900 p-2">
+				<div class="absolute top-3 left-3 w-full h-full bg-white shadow-md">
+					<img src="img/wallace.jpg" alt="Wallace S. Msagusa" class="w-full h-full object-cover" />
+				</div>
 			</div>
+
+
 
 		</div>
 
@@ -66,29 +76,11 @@
 		<section>
 			<h2>A Bit About Me</h2>
 			<p>
-				Experienced Software Engineer with a demonstrated history of working in the information technology and
-				services industry. Skilled in Java, Python, C++, and JavaScript. Strong engineering professional with a
-				Master of Science (MSc) focused in Information Technology from Carnegie Mellon University.
+				Experienced Software Engineer with a demonstrated history of designing and implementing enterprise VAS
+				applications. Strongly skilled in
+				Java, Python, C++ and PHP, among many other programming languages that I'm conversant in. A well-trained
+				professional with a Master of Science (MSc) in Information Technology from Carnegie Mellon University.
 			</p>
-		</section>
-
-		<section>
-			<h2>Projects</h2>
-			<article>
-				<h3>Project 1</h3>
-				<p>
-					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Google. It
-					involved developing a mobile application that allows users to track their daily activities.
-				</p>
-			</article>
-
-			<article>
-				<h3>Project 2</h3>
-				<p>
-					<strong>Description:</strong>&nbsp; This is a project that I worked on during my time at Facebook.
-					It involved developing a mobile application that allows users to connect with their friends.
-				</p>
-			</article>
 		</section>
 
 		<section>
@@ -103,16 +95,38 @@
 
 		<section>
 			<h2>Certifications</h2>
-			<ul>
+			<p>Work in Progress!</p>
+			<!-- <ul>
 				<li>MongoDB Associate Developer,</li>
 				<li>Spring Boot Certification,</li>
 				<li>Azure Certification,</li>
 				<li>Machine Learning Certification</li>
-			</ul>
+			</ul> -->
 		</section>
 
 
 	</main>
+
+	<div class="mt-8">
+		<ul>
+			<li><a href="https://orcid.org/0000-0002-4359-0173" class="mr-4"><i class="ai ai-orcid ai-fw pr-5" aria-hidden="true"
+						></i>ORCID</a></li>
+			<li><a href="https://www.researchgate.net/profile/Wallace-Msagusa" class="mr-4"><i class="fab fa-fw fa-researchgate text-black pr-5"
+						aria-hidden="true"></i>ResearchGate</a></li>
+			<li><a href="https://www.linkedin.com/in/wallace-stev/" class="mr-4"><i class="fab fa-fw fa-linkedin text-indigo-800 pr-5"
+						aria-hidden="true"></i>LinkedIn</a></li>
+			<li><a href="https://twitter.com/wallace_stev" class="mr-4"><i class="fab fa-fw fa-twitter text-blue-700 pr-5"
+						aria-hidden="true"></i>Twitter</a></li>
+			<li><a href="https://github.com/wallace-stev" class="mr-4"><i class="fab fa-fw fa-github text-black p5-5"
+						aria-hidden="true"></i>GitHub</a></li>
+			<li><a href="https://medium.com/@wallace_stev"><i class="fab fa-fw fa-medium text-black pr-5"
+						aria-hidden="true"></i>Medium</a></li>
+		</ul>
+	</div>
+
+	<footer>
+		<p class="pt-5 text-gray-600">&copy; Designed in 2025 by Wallace S. Msagusa</p>
+	</footer>
 
 	<!-- Adding Javascript -->
 	<script type="module" src="global.js"></script>

@@ -1,5 +1,5 @@
 # web-resume
-A customizable template to host a personal page about yourself on Github pages.
+A lightweight, customizable, and minimalistic template to host a personal page about your professional self on Github pages.
 
 
 ## Environment Setup
@@ -27,7 +27,7 @@ After installing and configuring the tools mentioned above, fork and clone the r
   
 To watch for changes and compile Tailwind CSS, run the command below in your terminal:
 ``` bash
-npx @tailwindcss/cli --input ./src/style.css --output ./dist/output.css --watch
+npx @tailwindcss/cli --input ./css/style.css --output ./dist/output.css --watch
 ```
 
 You can also remove the `--watch` flag and run the command below in your terminal when you're done with all the changes or everytime that you want to preview your changes.
@@ -36,4 +36,4 @@ npx @tailwindcss/cli --input ./src/style.css --output ./dist/output.css
 ```
 
 ## Samples
-- [Wallace S. Msagusa](#) (link coming!)
+- [Wallace S. Msagusa](https://wallace-stev.github.io)

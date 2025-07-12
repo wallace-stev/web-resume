@@ -12,28 +12,51 @@
 	<!-- FontAwesome Icons -->
 	<link rel="stylesheet" href="./css/all.min.css" </head>
 
+	<!-- Academic Icons -->
+	<link rel="stylesheet" href="./css/academicons.min.css">
+
 <body>
 
-	<nav class="py-8">
-		<ul>
+	<!-- <nav class="py-8">
+		<ul class="nav-list">
 			<li><a class="current" href="index.html">About</a></li>
 			<li><a href="#">Projects</a></li>
 			<li><a href="#">Research & Publications</a></li>
 			<li><a href="#">Personal</a></li>
 		</ul>
+	</nav> -->
+
+	<nav class="py-8 md:py-8">
+		<div class="nav-container">
+			<button class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-list nav-menu" id="navMenu">
+				<li><a class="current" href="index.html">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Research & Publications</a></li>
+				<li><a href="#">Personal</a></li>
+			</ul>
+		</div>
 	</nav>
 
-	<header class="bg-white flex justify-center py-6 mb-2">
-		<div class="max-w-6xl w-full px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
+	<header class="bg-white flex justify-center pt-1 pb-8 md:py-6 mb-3">
+		<div class="max-w-6xl w-full px-6 py-4 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
 
 			<!-- Left: Text Content -->
 			<div class="flex-2">
 				<h1 class="text-4xl font-bold text-gray-900 mt-1 mb-2">Hi, I'm Wallace</h1>
 				<p class="text-gray-500">Software Engineer & Researcher</p>
-				<p class="mt-4">I'm passionate about distributed systems, information security, usable privacy, machine
-					learning, responsible AI and open source technologies
-					and I want to use technology to help make people's lives more fulfilling. You can find me on <a
-						href="https://www.linkedin.com/in/wallace-stev/">LinkedIn</a> or shoot me an email.</p>
+				<p class="mt-4">I'm passionate about bridging the gap between cutting-edge research
+					and practical applications, building robust, secure and usable solutions,
+					contributing to Open Source tools and helping to make people's lives more fulfilling.
+					Technically strong in Java, Python, C++ and PHP, among many other programming languages that I'm
+					conversant in. You can find me on
+					<a href="https://www.linkedin.com/in/wallace-stev/" target="_blank">LinkedIn</a> or shoot me an
+					email.
+				</p>
 				<p class="mt-4"><strong>Education:</strong>&nbsp; BSc. Computer Science, MSc. Information Technology</p>
 				<p><strong>Email:</strong>&nbsp; <a href="mailto:wmsagusa@andrew.cmu.edu">wmsagusa[at]andrew.cmu.edu</a>
 				</p>
@@ -46,7 +69,7 @@
 					</a>
 					<a href="#"
 						class="px-6 py-2 bg-gray-100 text-gray-800 rounded-full font-medium hover:shadow-md transition">
-						Contact
+						Contact Me
 					</a>
 				</div>
 			</div>
@@ -54,73 +77,75 @@
 			<!-- Right: Profile Image Circular -->
 			<!-- <div class="flex-1 flex justify-center">
 				<div class="w-60 h-60 rounded-full overflow-hidden shadow-lg border-8 border-white">
-					<img src="img/4.jpg" alt="Alex Smith" class="w-full h-full object-cover">
+					<img src="img/4.jpg" alt="Wallace Msagusa" class="w-full h-full object-cover">
 				</div>
 			</div> -->
 
 			<!-- Right: Profile Image Square -->
-			<div class="relative w-64 h-80 bg-violet-900 p-2">
-				<div class="absolute top-3 left-3 w-full h-full bg-white shadow-md">
-					<img src="img/wallace.jpg" alt="Wallace S. Msagusa" class="w-full h-full object-cover" />
+			<div class="relative w-64 h-80 bg-violet-900 p-2 mt-4 md:mt-auto">
+				<div class="absolute top-4 left-4 w-full h-full bg-white shadow-md">
+					<img src="img/wallace.jpg" alt="Wallace Msagusa" class="w-full h-full object-cover" />
 				</div>
 			</div>
-
-
-
 		</div>
 
 	</header>
-
 
 	<main>
 		<section>
 			<h2>A Bit About Me</h2>
 			<p>
-				Experienced Software Engineer with a demonstrated history of designing and implementing enterprise VAS
-				applications. Strongly skilled in
-				Java, Python, C++ and PHP, among many other programming languages that I'm conversant in. A well-trained
-				professional with a Master of Science (MSc) in Information Technology from Carnegie Mellon University.
+				An experienced engineer & researcher with 4+ years of demonstrated experience in designing, implementing
+				and supporting enterprise VAS
+				applications. My industrial interests lie deeply with the fintech ecosystem in Africa, and my research
+				endeavors have largely been around
+				the security and privacy aspects of mobile money systems.
+			</p>
+			<p class="mt-4">
+				I'm currently a Research Associate at the <a target="_blank"
+					href="https://super.cs.uchicago.edu/members.html">University of
+					Chicago's SUPERgroup</a> (Security, Usability, & Privacy Education & Research group)
+				working under the supervision of <a href="https://www.blaseur.com" target="_blank">Prof. Blase Ur</a>.
+				The lab focuses
+				on interdisciplinary research at the intersection of computer security, privacy, AI ethics and HCI.
+			</p>
+			<p class="mt-4">
+				In addition to being a well-trained professional with a Master of Science (MSc) in Information
+				Technology from <strong><a href="https://www.cmu.edu" target="_blank">Carnegie Mellon
+						University</a></strong>,
+				I am considerably skilled in areas such as System Analysis & Design, Advanced Databases, Cloud DevOps,
+				Human-Computer Interaction, Building Tech Startups,
+				Distributed Systems, Data Analysis & Visualization, Responsible AI, Machine Learning, Information
+				Systems Auditing, Information Security, Privacy Policies,
+				Regulation of High-Tech Internet Platforms and Software Quality Assurance.
 			</p>
 		</section>
 
 		<section>
-			<h2>Skills</h2>
-			<ul>
-				<li>Java,</li>
-				<li>Python,</li>
-				<li>MongoDB,</li>
-				<li>JavaScript</li>
-			</ul>
-		</section>
-
-		<section>
 			<h2>Certifications</h2>
-			<p>Work in Progress!</p>
-			<!-- <ul>
-				<li>MongoDB Associate Developer,</li>
-				<li>Spring Boot Certification,</li>
-				<li>Azure Certification,</li>
-				<li>Machine Learning Certification</li>
-			</ul> -->
+			<ul class="certifications-list">
+				<li class="flex items-center gap-3 mb-4"><img src="img/citi-logo.webp" alt="citi-logo" class="w-10 md:w-15" />Social and Behavioral Conduct of Research</li>
+				<li class="flex items-center gap-3 mb-4"><img src="img/iop-logo.png" alt="iop-logo" class="w-10 md:w-15"/>IOP Peer Review Excellence</li>
+			</ul>
 		</section>
 
 
 	</main>
 
 	<div class="mt-8">
-		<ul>
-			<li><a href="https://orcid.org/0000-0002-4359-0173" class="mr-4"><i class="ai ai-orcid ai-fw pr-5" aria-hidden="true"
-						></i>ORCID</a></li>
-			<li><a href="https://www.researchgate.net/profile/Wallace-Msagusa" class="mr-4"><i class="fab fa-fw fa-researchgate text-black pr-5"
-						aria-hidden="true"></i>ResearchGate</a></li>
-			<li><a href="https://www.linkedin.com/in/wallace-stev/" class="mr-4"><i class="fab fa-fw fa-linkedin text-indigo-800 pr-5"
-						aria-hidden="true"></i>LinkedIn</a></li>
-			<li><a href="https://twitter.com/wallace_stev" class="mr-4"><i class="fab fa-fw fa-twitter text-blue-700 pr-5"
-						aria-hidden="true"></i>Twitter</a></li>
-			<li><a href="https://github.com/wallace-stev" class="mr-4"><i class="fab fa-fw fa-github text-black p5-5"
-						aria-hidden="true"></i>GitHub</a></li>
-			<li><a href="https://medium.com/@wallace_stev"><i class="fab fa-fw fa-medium text-black pr-5"
-						aria-hidden="true"></i>Medium</a></li>
+		<ul class="social-list">
+			<li><a href="https://orcid.org/0009-0007-4183-1301" target="_blank" class="mr-4"><i
+						class="ai ai-orcid ai-fw pr-5 text-lime-500" aria-hidden="true"></i>ORCID</a></li>
+			<li><a href="https://www.researchgate.net/profile/Wallace-Msagusa" target="_blank" class="mr-4"><i
+						class="fab fa-fw fa-researchgate text-black pr-5" aria-hidden="true"></i>ResearchGate</a></li>
+			<li><a href="https://www.linkedin.com/in/wallace-stev/" target="_blank" class="mr-4"><i
+						class="fab fa-fw fa-linkedin text-indigo-800 pr-5" aria-hidden="true"></i>LinkedIn</a></li>
+			<li><a href="https://twitter.com/wallace_stev" target="_blank" class="mr-4"><i
+						class="fab fa-fw fa-twitter text-sky-500 pr-5" aria-hidden="true"></i>Twitter</a></li>
+			<li><a href="https://github.com/wallace-stev" target="_blank" class="mr-4"><i
+						class="fab fa-fw fa-github text-black pr-5" aria-hidden="true"></i>GitHub</a></li>
+			<li><a href="https://medium.com/@wallace_stev" target="_blank"><i
+						class="fab fa-fw fa-medium text-black pr-5" aria-hidden="true"></i>Medium</a></li>
 		</ul>
 	</div>
 
@@ -129,7 +154,7 @@
 	</footer>
 
 	<!-- Adding Javascript -->
-	<script type="module" src="global.js"></script>
+	<script src="js/global.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 /* Importing Google Fonts */
 /* Quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 /* Crimson Text */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 /* Space Mono */
@@ -17,7 +17,7 @@
 
 body {
     /* font: 100%/1.65 'Mulish', sans-serif; */
-    font: 90%/1.8 'Space Mono', monospace;
+    font: 92%/1.85 'Space Mono', monospace;
     max-width: 140ch;
     margin-inline: max(1em, (100% - 140ch) / 2);
     color: #2b2b2b;
@@ -37,6 +37,15 @@ nav {
     font-weight: 500;
 }
 
+/* Navigation specific styles */
+.nav-list {
+    display: contents;
+}
+
+.nav-list li {
+    display: contents;
+}
+
 nav a {
     text-decoration: none;
     color: inherit;
@@ -51,10 +60,28 @@ nav a {
     color: var(--color-violet-700);
 }
 
-#profile {
-    max-width: 45%;
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    background: none;
 }
 
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #2b2b2b;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+header p {
+    text-align: start;
+}
 
 h1,
 h2,
@@ -78,32 +105,29 @@ h3 {
     font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-    html {
-        max-width: 100%;
-    }
-
-    body {
-        max-width: 90%;
-        margin-inline: auto;
-        font: 75%/1.65 'Space Mono', monospace;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.15em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
+/* Certifications list - always vertical */
+.certifications-list {
+    display: block;
 }
 
-header p {
-    text-align: start;
+.certifications-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Social media list - vertical on mobile, horizontal on desktop */
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.social-list li {
+    display: block;
 }
 
 a {
@@ -137,4 +161,120 @@ footer {
     margin-top: 1.75em;
     margin-bottom: 3em;
     border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 100%;
+    }
+
+    body {
+        max-width: 92%;
+        margin-inline: auto;
+        font: 82%/1.75 'Space Mono', monospace;
+    }
+
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hide navigation menu by default on mobile */
+    .nav-menu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 10;
+        width: 90vw;
+        background-color: white;
+        flex-direction: column;
+        border-top: 1px solid #e5e7eb;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 50;
+        display: flex;
+    }
+
+    /* Override display contents for mobile menu items */
+    .nav-menu li {
+        display: block;
+    }
+
+    /* Show navigation menu when active */
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu li a {
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #f3f4f6;
+        text-align: left;
+        display: block;
+    }
+
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Social list vertical on mobile */
+    .social-list {
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-left: 1em;
+    }
+
+    /* Navigation container adjustments */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.15em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 1em 1em 0.75em 1em;
+        background-color: var(--color-indigo-50);
+        border-radius: 1.5em;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 769px) {
+    .nav-container {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
 }

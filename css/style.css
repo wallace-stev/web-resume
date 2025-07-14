@@ -1,14 +1,6 @@
 /* Importing Google Fonts */
-/* Quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-/* Crimson Text */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 /* Space Mono */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* Quattrocento */
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
-/* Mulish */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* Inconsolata */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
@@ -21,6 +13,7 @@ body {
     max-width: 140ch;
     margin-inline: max(1em, (100% - 140ch) / 2);
     color: #2b2b2b;
+    position: relative;
 }
 
 ul {
@@ -96,12 +89,12 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 800;
 }
 
 h3 {
-    font-size: 1.15em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
@@ -142,7 +135,7 @@ a {
 main {
     padding: 2.5em 2.5em 1.5em 2.5em;
     background-color: var(--color-indigo-50);
-    border-radius: 1.5em;
+    border-radius: 1.25em;
 }
 
 main section {
@@ -153,14 +146,18 @@ main section {
 
 main section h2 {
     margin-bottom: 0.5em;
-    padding-bottom: 0.25em;
 }
 
-footer {
+.copy-container {
     text-align: center;
     margin-top: 1.75em;
-    margin-bottom: 3em;
     border-top: 1px solid #ccc;
+}
+
+.copy-container a {
+    color: var(--color-gray-400);
+    text-decoration: none;
+    font-size: 0.75em;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,7 +168,7 @@ footer {
     body {
         max-width: 92%;
         margin-inline: auto;
-        font: 82%/1.75 'Space Mono', monospace;
+        font: 88%/1.8 'Space Mono', monospace;
     }
 
     /* Show hamburger on mobile */
@@ -250,21 +247,21 @@ footer {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.15em;
+        font-size: 1.75em;
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     main {
         padding: 1em 1em 0.75em 1em;
         background-color: var(--color-indigo-50);
-        border-radius: 1.5em;
+        border-radius: 1.15em;
     }
 }
 
@@ -277,4 +274,25 @@ footer {
     .nav-menu {
         display: flex;
     }
+}
+
+/* Modal Styles - Custom properties that Tailwind can't handle */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none !important;
+}
+
+.modal:not(.hidden) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

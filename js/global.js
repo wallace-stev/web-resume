@@ -248,12 +248,3 @@ function initializeMobileNav() {
 		}
 	});
 }
-
-// Setting up tsParticles
-tsparticles.load("tsparticles", {
-	particles: {
-		move: {
-			enable: true
-		}
-	}
-});

@@ -1,4 +1,6 @@
 /* Importing Google Fonts */
+/* Space Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 /* Space Mono */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* Inconsolata */
@@ -8,11 +10,10 @@
 @import "tailwindcss";
 
 body {
-    /* font: 100%/1.65 'Mulish', sans-serif; */
     font: 92%/1.85 'Space Mono', monospace;
     max-width: 140ch;
     margin-inline: max(1em, (100% - 140ch) / 2);
-    color: #2b2b2b;
+    color: var(--color-gray-800);
     position: relative;
 }
 
@@ -28,6 +29,8 @@ ul {
 nav {
     display: flex;
     font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.075ch;
 }
 
 /* Navigation specific styles */
@@ -44,13 +47,12 @@ nav a {
     color: inherit;
     text-align: center;
     padding-right: calc(var(--spacing) * 5);
-    margin-right: calc(var(--spacing) * 5);
+    margin-right: calc(var(--spacing) * 7);
 }
 
 .current {
     font-weight: bold;
-    padding-bottom: 0.1em;
-    color: var(--color-violet-700);
+    color: var(--color-violet-600);
 }
 
 /* Hamburger menu styles */
@@ -66,7 +68,7 @@ nav a {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #2b2b2b;
+    background-color: var(--color-gray-800);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -79,7 +81,7 @@ header p {
 h1,
 h2,
 h3 {
-    color: #252525;
+    color: var(--color-neutral-900);
     font-family: 'Inconsolata', monospace;
 }
 
@@ -124,13 +126,19 @@ h3 {
 }
 
 a {
-    color: var(--color-violet-700);
+    color: var(--color-violet-600);
 }
 
-.link-button:hover {
+.cv-button {
     background-color: var(--color-violet-700);
-    color: white;
+    color: var(--color-white);
+
 }
+
+.cv-button:hover {
+    background-color: var(--color-violet-800);
+}
+
 
 main {
     padding: 2.5em 2.5em 1.5em 2.5em;
@@ -157,7 +165,6 @@ main section h2 {
 .copy-container a {
     color: var(--color-gray-400);
     text-decoration: none;
-    font-size: 0.75em;
 }
 
 @media screen and (max-width: 768px) {
@@ -247,15 +254,16 @@ main section h2 {
     }
 
     h1 {
-        font-size: 2em;
-    }
-
-    h2 {
         font-size: 1.75em;
     }
 
+    h2 {
+        font-size: 1.5em;
+    }
+
     h3 {
-        font-size: 1.25em;
+        font-size: 1.15em;
+        line-height: 1.5em;
     }
 
     main {

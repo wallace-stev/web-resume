@@ -11,16 +11,18 @@ A lightweight, customizable, and minimalistic template to host a personal page a
 - Install the Browse Lite VS Code extension to preview in VS Code ([see instructions](https://marketplace.visualstudio.com/items?itemName=antfu.browse-lite))
 
 
-## Contribution
+## Contribution & Appreciation
 A guide for those wanting to contribute to the project:
 
 [![indentation](https://img.shields.io/badge/indentation-tabs-brightgreen)](https://www.codementor.io/@aviaryan/tabs-v-s-spaces-an-analysis-on-why-tabs-are-better-96xr0bg32)
 
 
-The project uses the following libraries/tools:
+The project uses the following libraries/tools that have been so heplful towards designing different components of the template:
 - Tailwind CSS ([see here](https://tailwindcss.com))
 
 - Google Fonts ([see here](https://fonts.google.com))
+
+- Flowbite Tailwind Component Library ([see here](https://flowbite.com))
 
 ## Installation & Usage
 After installing and configuring the tools mentioned above, fork and clone the repository, and open the directory using the IDE of your choice. Follow the coding guide and inline comments when making changes to the code. It is advised to constantly build/compile your Tailwind output file as you make changes to the `style.css` file so the changes can be previewed in real time.  

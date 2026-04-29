@@ -22,10 +22,8 @@ The project uses the following libraries/tools that have been so heplful towards
 
 - Google Fonts ([see here](https://fonts.google.com))
 
-- Flowbite Tailwind Component Library ([see here](https://flowbite.com))
-
 ## Installation & Usage
-After installing and configuring the tools mentioned above, fork and clone the repository, and open the directory using the IDE of your choice. Follow the coding guide and inline comments when making changes to the code. It is advised to constantly build/compile your Tailwind output file as you make changes to the `style.css` file so the changes can be previewed in real time.  
+After installing and configuring the tools mentioned above, fork/clone the repository, and open the directory using the IDE of your choice. Follow the coding guide and inline comments when making changes to the code. It is advised to constantly build/compile your Tailwind output file as you make changes to the `style.css` file so the changes can be previewed in real time.  
   
 To watch for changes and compile Tailwind CSS, run the command below in your terminal:
 ``` bash
@@ -36,6 +34,8 @@ You can also remove the `--watch` flag and run the command below in your termina
 ``` bash
 npx @tailwindcss/cli --input ./src/style.css --output ./dist/output.css
 ```
+
+After running the commands, access the Command Palette in VS Code `(Ctrl + Shift + P)` then select "Live Server: Open with Live Server" for a live preview on your default browser.
 
 ## Samples
 - [Wallace S. Msagusa](https://wallace-stev.github.io)
